@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-
-namespace ConsoleApplication1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine();
+﻿
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -134,6 +121,8 @@ namespace ElsoValodiCharpProjekt
                 Console.WriteLine($"A három számból: {szamA}, {szamB} és {szamC} háromszög nem szerkeszthető.");
             }*/
 
+
+
             /* 8. Feladat:
             Console.Write("Adj meg egy számot: ");
             int szamA = Convert.ToInt32(Console.ReadLine());
@@ -152,12 +141,57 @@ namespace ElsoValodiCharpProjekt
                 Console.WriteLine("A feladat nem megoldható!");
             }*/
 
+
+
+            /* 15 Feladat:Potitív szám bekérése majd addig 0-tól a számig kiiratni a számokat!
+            Console.Write("Kérek egy egész pozitív számot!");
+            int szam =Int32.Parse(Console.ReadLine());
+            string kiiratas = "";
+            for (int i = 1; i < szam; i++)
+            {
+            kiiratas += i + " ";
+            }
+            Console.WriteLine(kiiratas);
+
+
+            */
+            /*15 Feladat:Potitív szám bekérése majd addig 0-tól a számig kiiratni a számokat!
+            Console.Write("Kérek egy egész pozitív számot!");
+            int szam = Int32.Parse(Console.ReadLine());
+            for (int i = 1; i < szam; i++)
+            {
+            Console.Write(i+" ");
+            }
+           */
+
+            /*előltesztelős ciklus
+            Console.Write("Kérek egy egész pozitív számot!");
+            int szam = Int32.Parse(Console.ReadLine());
+            int i=0;
+            while(i<szam)
+            {
+                Console.Write(i + " ");
+                i = i + 1;
+            }
+
+    */
+            /*hátultesztelős ciklus
+            Console.Write("Kérek egy egész pozitív számot!");
+            int szam = Int32.Parse(Console.ReadLine());
+            int i = 0;
+            do
+            {
+                Console.Write(i + " ");
+
+            } while (i < szam);
+            */
+
+
+
+
             Console.ReadKey(true);
-        }
-    }
+}
+}
 }
 
-            Console.ReadLine();
-        }
-    }
-}
+
